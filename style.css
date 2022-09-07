@@ -108,8 +108,7 @@ main .button {
     height: 40px;
     width: 398.6081237792969px;
     border-radius: 10px;
-    background-color: #C4C4C4;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,4 +138,14 @@ aside{
 }
 aside img{
     margin: auto;
+}
+
+.selecionado {
+    border: 3px solid #404EED;
+}
+.naoPedir{
+    background-color: #C4C4C4; 
+}
+.pedir {
+    background-color: #404EED;
 }
