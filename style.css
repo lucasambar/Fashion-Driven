@@ -68,7 +68,7 @@ main h1{
     align-items: center;
     justify-content: center;
 }
-.nome{
+#nome{
     font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
@@ -123,23 +123,21 @@ main .button p{
     color: #FCFCFC;
 }
 
-aside{
+.tudo aside{
     width: 50%;
-    position: absolute;
-    top: 89px;
-    right: 0;
     background-color: #4A72EE;
     height: 785px;
-    padding: 30px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-aside img{
-    margin: auto;
+    position:relative;
+
+    overflow: hidden;
 }
 
+.tudo{
+    display:flex;
+}
 .selecionado {
     border: 3px solid #404EED;
 }

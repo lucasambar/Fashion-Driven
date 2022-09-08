@@ -13,80 +13,81 @@
     <div class="header">
         <img src="./FashionDriven/Logo.png">
     </div>
-
-    <main>
+    <div class="tudo">
+        <main>
+            
+            <h1>Escolha o modelo</h1>
+            <div class="feed">
+                <div class="tipo " onclick="selecionaModelo(this)" >
+                    <div class="img modelo tshirt" >
+                        <img src="./FashionDriven/tshirt.png">
+                    </div>
+                    <p id="nome">T-shirt</p>
+                </div>
+                <div class="tipo " onclick="selecionaModelo(this)">
+                    <div class="img modelo camiseta" >
+                        <img src="./FashionDriven/Camiseta.png">
+                    </div>
+                    <p id="nome">Camiseta</p>
+                </div>
+                <div class="tipo modelo" onclick="selecionaModelo(this)">
+                    <div class="img modelo manga" >
+                        <img src="./FashionDriven/Mangalonga.png">
+                    </div>
+                    <p id="nome">Manga longa</p>
+                </div>
+            </div>
         
-        <h1>Escolha o modelo</h1>
-        <div class="feed">
-            <div class="tipo " onclick="selecionaModelo(this)" >
-                <div class="img modelo">
-                    <img src="./FashionDriven/tshirt.png">
+            <h1>Escolha a gola</h1>
+            <div class="feed">
+                <div class="tipo " onclick="selecionaGola(this)">
+                    <div class="img gola v">
+                        <img src="./FashionDriven/GolaV.png">
+                    </div>
+                    <p id="nome">Gola V</p>
                 </div>
-                <p class="nome modelo">T-shirt</p>
-            </div>
-            <div class="tipo " onclick="selecionaModelo(this)">
-                <div class="img modelo">
-                    <img src="./FashionDriven/Camiseta.png">
+                <div class="tipo " onclick="selecionaGola(this)">
+                    <div class="img gola redonda"><img src="./FashionDriven/GolaRedonda.png"></div>
+                    <p id="nome">Gola Redonda</p>
                 </div>
-                <p class="nome">Camiseta</p>
-            </div>
-            <div class="tipo modelo" onclick="selecionaModelo(this)">
-                <div class="img modelo">
-                    <img src="./FashionDriven/Mangalonga.png">
+                <div class="tipo " onclick="selecionaGola(this)">
+                    <div class="img gola polo"><img src="./FashionDriven/GolaPolo.png"></div>
+                    <p id="nome">Gola Polo</p>
                 </div>
-                <p class="nome">Manga longa</p>
             </div>
-        </div>
-    
-        <h1>Escolha a gola</h1>
-        <div class="feed">
-             <div class="tipo " onclick="selecionaGola(this)">
-                <div class="img gola">
-                    <img src="./FashionDriven/GolaV.png">
+            
+            <h1>Escolha o tecido</h1>
+            <div class="feed">
+                <div class="tipo " onclick="selecionaTecido(this)">
+                    <div class="img tecido seda"><img src="./FashionDriven/Seda.png"></div>                    
+                    <p id="nome">Seda</p>
                 </div>
-                <p class="nome">Gola V</p>
+                <div class="tipo " onclick="selecionaTecido(this)">
+                    <div class="img tecido algodao"><img src="./FashionDriven/Algodão.png"></div>
+                    <p id="nome">Algodão</p>
+                </div>
+                <div class="tipo" onclick="selecionaTecido(this)">
+                    <div class="img tecido poli"><img src="./FashionDriven/Poliester.png"></div>
+                    <p id="nome">Poliéster</p>
+                </div>
             </div>
-            <div class="tipo " onclick="selecionaGola(this)">
-                <div class="img gola"><img src="./FashionDriven/GolaRedonda.png"></div>
-                <p class="nome">Gola Redonda</p>
-            </div>
-            <div class="tipo " onclick="selecionaGola(this)">
-                <div class="img gola"><img src="./FashionDriven/GolaPolo.png"></div>
-                <p class="nome">Gola Polo</p>
-            </div>
-        </div>
-        
-        <h1>Escolha o tecido</h1>
-        <div class="feed">
-            <div class="tipo " onclick="selecionaTecido(this)">
-                <div class="img tecido"><img src="./FashionDriven/Seda.png"></div>                    
-                <p class="nome">Seda</p>
-            </div>
-            <div class="tipo " onclick="selecionaTecido(this)">
-                <div class="img tecido"><img src="./FashionDriven/Algodão.png"></div>
-                <p class="nome">Algodão</p>
-            </div>
-            <div class="tipo" onclick="selecionaTecido(this)">
-                <div class="img tecido"><img src="./FashionDriven/Poliester.png"></div>
-                <p class="nome">Poliéster</p>
-            </div>
-        </div>
 
-        <h1>Imagem de refência</h1>
-        <input placeholder="Insira o link">
+            <h1>Imagem de refência</h1>
+            <input placeholder="Insira o link" onchange="link(this)">
 
-        <div class="button naoPedir"><p>Confirmar pedido</p></div>
+            <div class="button naoPedir" onclick="pedir()"><p>Confirmar pedido</p></div>
 
-    </main>
+        </main>
 
-    <aside>
-        <img src="./FashionDriven/ilustração.png">
-    </aside>
-
+        <aside>
+            <img src="./FashionDriven/ilustração.png">
+        </aside>
+    </div>
     <footer>
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
