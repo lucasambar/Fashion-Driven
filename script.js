@@ -108,9 +108,10 @@ function pedidoPronto () {
     botao.classList.add("pedir")
 }
 
-function pedir(botao) {
-    if(botao.classList.contains("naoPedir")) {
-        return
+function pedir() {
+    let botao = document.querySelector(".button")
+    if (botao.classList.contains("selecionado"))  {
+       return
     }
     
     let objeto = {
@@ -121,10 +122,8 @@ function pedir(botao) {
         "owner": usuario,
         "author": usuario
     }
-    
+
     let promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", objeto)
     promessa.then(() => {alert("Encomenda enviada com sucesso!")})
-    promessa.catch((erro) => {
-        console.log(erro)
-    })
+    promessa.catch((erro) => {alert("Ops! Algo deu erradp, tente novamente mais tarde!")})
 }
