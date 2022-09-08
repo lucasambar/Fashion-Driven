@@ -147,3 +147,71 @@ main .button p{
 .pedir {
     background-color: #404EED;
 }
+
+footer{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #F2F2F2;
+}
+footer .container{
+    width: 1055px;
+    margin: auto;
+}
+footer .container h1{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#232323;
+
+    display:block;
+    height: 28px;
+    width: 174px;
+}
+footer .container .anteriores{
+    width:1100px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .container .anteriores .produto{
+    height: 236.46641540527344px;
+    width: 201.69358825683594px;
+    border-radius: 5px;
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .container .anteriores .produto img{
+    height: 180px;
+    width: 180px;
+}
+footer .container .anteriores .produto h2{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+footer .container .anteriores .produto strong{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
