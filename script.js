@@ -128,7 +128,7 @@ function pedir() {
     promessa.catch((erro) => {alert("Ops! Algo deu errad0, tente novamente mais tarde!")})
 }
 
-
+let arr;
 anteriores()
 function anteriores () {
     let promessa = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts")
@@ -136,14 +136,14 @@ function anteriores () {
     promessa.catch((erro)=>{console.log(erro)})
 }
 function renderizaAnteriores (objeto) {
-    let arr = objeto.data
+    arr = objeto.data
     console.log(arr)
     let div = document.querySelector(".anteriores")
 
     div.innerHTML = ``
     arr.forEach((i) => {
         div.innerHTML += `
-        <div class="produto" onclick="pedirAnterior(this)">
+        <div class="produto" onclick="pedirAnterior(${i.id})">
             <img src="${i.image}">
             <h2><strong>Criador:</strong> ${i.owner}</h2>
         </div>

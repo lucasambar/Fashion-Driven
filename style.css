@@ -150,7 +150,7 @@ main .button p{
 
 footer{
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
     background-color: #F2F2F2;
 }
 footer .container{
@@ -176,6 +176,7 @@ footer .container .anteriores{
 
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 footer .container .anteriores .produto{
     height: 236.46641540527344px;
@@ -184,7 +185,6 @@ footer .container .anteriores .produto{
     padding: 12px;
     padding-top: 15px;
     padding-bottom: 12px;
-    margin-left: 10px;
     margin-bottom: 15px;
     background-color: #FFFFFF;
 
@@ -192,7 +192,6 @@ footer .container .anteriores .produto{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 footer .container .anteriores .produto img{
     height: 180px;
