@@ -128,7 +128,8 @@ function pedir() {
     promessa.catch((erro) => {alert("Ops! Algo deu errad0, tente novamente mais tarde!")})
 }
 
-let arr;
+let arr, objeto;
+
 anteriores()
 function anteriores () {
     let promessa = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts")
@@ -149,4 +150,26 @@ function renderizaAnteriores (objeto) {
         </div>
         `
     })
+}
+
+function pedirAnterior (id) {
+    let confirme = confirm("Deseja fazer o pedido dessa camiseta já existente?")
+    if (confirme) {
+        arr.forEach((i) => {
+            if(i.id === id) {
+                objeto = {
+                    "model": i.model,
+                    "neck": i.neck,
+                    "material": i.material,
+                    "image": i.image,
+                    "owner": usuario,
+                    "author": i.owner	
+                }
+            }
+        })
+
+        let promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts",objeto)
+        promessa.then(() => {alert("Encomenda enviada com sucesso!");anteriores()})
+        promessa.catch(() => {alert("Ops! Algo deu errad0, tente novamente mais tarde!")})
+    }
 }
